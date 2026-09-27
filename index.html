@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>محل ورد ومشتل أشجار ونباتات | Bloom & Nursery</title>
+<meta name="description" content="محل ورد ومشتل أشجار ونباتات - باقات ورد، نباتات داخلية، أشجار، هدايا مع توصيل وطلب عبر واتساب">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --pink:#ff5e8a; --orange:#ff9a3d; --purple:#8b5cf6; --green:#22c55e;
+  --yellow:#facc15; --teal:#14b8a6; --ink:#2b2140; --muted:#7a7390;
+  --bg:#fff9f5; --card:#fff; --wa:#25d366;
+}
+body{font-family:'Cairo','Poppins',system-ui,sans-serif;background:var(--bg);color:var(--ink);overflow-x:hidden}
+html[dir="ltr"] body{font-family:'Poppins','Cairo',sans-serif}
+a{text-decoration:none;color:inherit}
+.container{max-width:1150px;margin:0 auto;padding:0 20px}
+/* Header */
+header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.88);backdrop-filter:blur(14px);border-bottom:1px solid #ffe4d6}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:12px 20px;max-width:1150px;margin:0 auto;gap:12px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:900;font-size:20px}
+.logo-mark{width:44px;height:44px;border-radius:14px;display:grid;place-items:center;font-size:26px;color:#fff;background:linear-gradient(135deg,var(--pink),var(--orange) 55%,var(--purple));box-shadow:0 8px 20px rgba(255,94,138,.35)}
+.logo small{display:block;font-size:11px;font-weight:600;color:var(--muted);line-height:1}
+.links{display:flex;gap:18px;font-weight:700;font-size:14px}
+.links a{opacity:.75}.links a:hover{opacity:1;color:var(--pink)}
+.nav-actions{display:flex;gap:8px;align-items:center}
+.btn{border:none;cursor:pointer;font-family:inherit;font-weight:800;border-radius:999px;padding:11px 22px;font-size:14px;display:inline-flex;align-items:center;gap:8px;transition:.2s}
+.btn-pink{background:linear-gradient(135deg,var(--pink),#ff7a5c);color:#fff;box-shadow:0 10px 24px rgba(255,94,138,.35)}
+.btn-pink:hover{transform:translateY(-2px)}
+.btn-white{background:#fff;border:2px solid #ffe0d1;color:var(--ink)}
+.btn-wa{background:var(--wa);color:#fff;box-shadow:0 10px 24px rgba(37,211,102,.35)}
+.btn-ghost{background:#fff;border:1.5px solid #eee;color:var(--ink);padding:8px 16px;font-size:13px}
+.lang-btn{background:linear-gradient(135deg,#2b2140,#5b4a8a);color:#fff;padding:9px 16px;font-size:13px}
+.cart-btn{position:relative;background:#2b2140;color:#fff;width:44px;height:44px;border-radius:50%;display:grid;place-items:center;font-size:19px;border:none;cursor:pointer}
+.cart-count{position:absolute;top:-4px;inset-inline-end:-4px;background:var(--pink);color:#fff;font-size:11px;min-width:20px;height:20px;border-radius:999px;display:grid;place-items:center;font-weight:800;padding:0 5px}
+/* Hero */
+.hero{position:relative;overflow:hidden;padding:56px 0 40px;background:
+ radial-gradient(600px 300px at 85% 10%, #ffe3ec 0%, transparent 60%),
+ radial-gradient(500px 300px at 10% 20%, #fff3d6 0%, transparent 60%),
+ radial-gradient(500px 400px at 50% 100%, #e9e4ff 0%, transparent 60%), var(--bg)}
+.blob{position:absolute;border-radius:50%;filter:blur(60px);opacity:.5;pointer-events:none}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:32px;align-items:center;position:relative}
+.badge{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1.5px solid #ffd9e5;color:#d81b60;font-weight:800;font-size:12px;padding:7px 14px;border-radius:999px;box-shadow:0 4px 14px rgba(255,94,138,.12)}
+.hero h1{font-size:46px;line-height:1.2;font-weight:900;margin:16px 0 10px}
+.hero h1 .c1{color:var(--pink)} .hero h1 .c2{color:var(--orange)} .hero h1 .c3{color:var(--purple)}
+.hero p{color:var(--muted);font-size:16px;line-height:1.9;max-width:520px}
+.hero-cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}
+.hero-stats{display:flex;gap:22px;margin-top:22px;flex-wrap:wrap}
+.hstat{background:#fff;border:1px solid #ffe4d6;border-radius:16px;padding:10px 18px;min-width:130px;box-shadow:0 6px 18px rgba(0,0,0,.05)}
+.hstat b{font-size:20px;display:block} .hstat span{font-size:12px;color:var(--muted);font-weight:700}
+.hero-visual{position:relative}
+.hero-card-main{background:#fff;border-radius:28px;padding:18px;box-shadow:0 24px 60px rgba(139,92,246,.18);border:1px solid #f1eaff;position:relative;overflow:hidden}
+.hero-flowers{font-size:86px;text-align:center;line-height:1.2;filter:drop-shadow(0 12px 20px rgba(255,94,138,.25))}
+.float-chip{position:absolute;background:#fff;border-radius:16px;padding:10px 14px;box-shadow:0 12px 30px rgba(0,0,0,.12);font-size:13px;font-weight:800;display:flex;gap:8px;align-items:center;border:1px solid #f0e6ff}
+.fc1{top:18px;inset-inline-start:-10px;transform:rotate(-4deg)}
+.fc2{bottom:18px;inset-inline-end:-6px;transform:rotate(3deg)}
+.marquee{display:flex;gap:10px;overflow:hidden;margin-top:26px;padding:10px 0}
+.marquee span{background:#2b2140;color:#fff;font-size:12px;font-weight:700;padding:8px 16px;border-radius:999px;white-space:nowrap}
+/* Sections */
+section{padding:56px 0}
+.sec-head{text-align:center;max-width:640px;margin:0 auto 28px}
+.sec-tag{display:inline-block;font-size:12px;font-weight:800;letter-spacing:.06em;padding:6px 14px;border-radius:999px;color:#fff;background:linear-gradient(90deg,var(--pink),var(--orange))}
+.sec-head h2{font-size:32px;font-weight:900;margin:12px 0 8px}
+.sec-head p{color:var(--muted);line-height:1.8;font-size:15px}
+/* Filters */
+.filters{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-bottom:24px}
+.fbtn{border:2px solid #ffe0d1;background:#fff;padding:9px 20px;border-radius:999px;font-weight:800;font-size:13px;cursor:pointer;font-family:inherit}
+.fbtn.active{background:#2b2140;color:#fff;border-color:#2b2140}
+/* Products */
+.grid-products{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.card{background:var(--card);border-radius:22px;overflow:hidden;border:1px solid #f3e8ff;box-shadow:0 10px 26px rgba(0,0,0,.06);transition:.2s;display:flex;flex-direction:column}
+.card:hover{transform:translateY(-5px);box-shadow:0 18px 40px rgba(255,94,138,.18)}
+.card-img{height:170px;display:grid;place-items:center;font-size:72px;position:relative}
+.card-img .price-tag{position:absolute;top:12px;inset-inline-start:12px;background:#2b2140;color:#fff;font-size:12px;font-weight:800;padding:6px 12px;border-radius:999px}
+.card-img .cat-tag{position:absolute;bottom:10px;inset-inline-start:12px;background:rgba(255,255,255,.9);font-size:11px;font-weight:800;padding:4px 10px;border-radius:999px}
+.card-body{padding:14px 14px 16px;display:flex;flex-direction:column;gap:8px;flex:1}
+.card-body h3{font-size:15px;font-weight:800;line-height:1.5}
+.card-body .desc{font-size:12px;color:var(--muted);line-height:1.7}
+.card-foot{display:flex;gap:8px;margin-top:auto}
+.add-btn{flex:1;background:linear-gradient(135deg,var(--pink),var(--orange));color:#fff;border:none;border-radius:12px;padding:10px;font-weight:800;font-size:13px;cursor:pointer;font-family:inherit}
+.order-btn{background:#eefbee;color:#15803d;border:1.5px solid #bbf7d0;border-radius:12px;padding:10px 12px;font-weight:800;font-size:13px;cursor:pointer;font-family:inherit}
+/* Occasions */
+.grid-occ{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.occ{border-radius:22px;padding:22px 14px;text-align:center;color:#fff;position:relative;overflow:hidden;min-height:170px;display:flex;flex-direction:column;justify-content:center;gap:6px}
+.occ .emo{font-size:44px} .occ b{font-size:15px} .occ span{font-size:12px;opacity:.9;line-height:1.6}
+/* Why */
+.grid-why{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.why{background:#fff;border-radius:20px;padding:20px;text-align:center;border:1px solid #ffe4d6}
+.why .ic{width:52px;height:52px;border-radius:16px;display:grid;place-items:center;font-size:26px;margin:0 auto 10px;color:#fff}
+.why b{font-size:14px} .why p{font-size:12px;color:var(--muted);margin-top:6px;line-height:1.7}
+/* Reviews */
+.grid-rev{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.rev{background:#fff;border-radius:20px;padding:20px;border:1px solid #f1eaff;box-shadow:0 8px 22px rgba(139,92,246,.08)}
+.rev .stars{color:#f59e0b;font-size:14px;letter-spacing:2px}
+.rev p{font-size:13.5px;line-height:1.9;margin:10px 0;color:#4b4560}
+.rev .who{display:flex;gap:10px;align-items:center}
+.avatar{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;color:#fff;font-weight:900}
+/* Contact */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:stretch}
+.info-card{background:#2b2140;color:#fff;border-radius:24px;padding:26px;position:relative;overflow:hidden}
+.info-card::after{content:"🌸";position:absolute;font-size:180px;opacity:.08;bottom:-30px;inset-inline-end:-20px}
+.info-row{display:flex;gap:12px;align-items:flex-start;margin:16px 0;font-size:14px;line-height:1.8}
+.info-ic{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;font-size:19px;flex-shrink:0;background:rgba(255,255,255,.12)}
+.map-card{background:#fff;border-radius:24px;overflow:hidden;border:1px solid #eee;display:flex;flex-direction:column}
+.map-card iframe{width:100%;height:300px;border:0}
+.map-foot{padding:14px 18px;display:flex;gap:10px;flex-wrap:wrap;align-items:center;justify-content:space-between}
+/* Cart drawer */
+.overlay{position:fixed;inset:0;background:rgba(43,33,64,.5);backdrop-filter:blur(3px);display:none;z-index:80}
+.overlay.show{display:block}
+.drawer{position:fixed;top:0;bottom:0;inset-inline-end:0;width:min(400px,92vw);background:#fff;z-index:90;transform:translateX(-110%);transition:.3s;display:flex;flex-direction:column;border-radius:24px 0 0 24px;overflow:hidden}
+html[dir="ltr"] .drawer{transform:translateX(110%);border-radius:0 24px 24px 0}
+.drawer.open{transform:none!important}
+html[dir="rtl"] .drawer{transform:translateX(-110%)}
+.drawer-head{background:linear-gradient(135deg,var(--pink),var(--purple));color:#fff;padding:18px 20px;display:flex;justify-content:space-between;align-items:center}
+.drawer-body{flex:1;overflow:auto;padding:16px}
+.cart-item{display:flex;gap:10px;align-items:center;background:#fff9f5;border:1px solid #ffe4d6;border-radius:14px;padding:10px;margin-bottom:10px}
+.cart-item .e{font-size:30px;width:52px;height:52px;display:grid;place-items:center;border-radius:12px;flex-shrink:0}
+.qty{display:flex;gap:8px;align-items:center}
+.qty button{width:26px;height:26px;border-radius:8px;border:1px solid #ddd;background:#fff;cursor:pointer;font-weight:900}
+.drawer-foot{padding:16px;border-top:1px solid #eee;background:#fff}
+.drawer-foot input,.drawer-foot textarea{width:100%;border:1.5px solid #eee;border-radius:12px;padding:10px 12px;font-family:inherit;font-size:13px;margin-bottom:8px}
+.total-row{display:flex;justify-content:space-between;font-weight:900;font-size:16px;margin:10px 0}
+/* Floating */
+.wa-float{position:fixed;bottom:20px;inset-inline-end:20px;z-index:60;width:58px;height:58px;border-radius:50%;background:var(--wa);display:grid;place-items:center;font-size:28px;box-shadow:0 14px 30px rgba(37,211,102,.45);transition:.2s}
+.wa-float:hover{transform:scale(1.08)}
+.toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(80px);background:#2b2140;color:#fff;padding:12px 22px;border-radius:999px;font-size:13px;font-weight:700;z-index:120;transition:.3s;opacity:0}
+.toast.show{transform:translateX(-50%) translateY(0);opacity:1}
+footer{background:#2b2140;color:#cfc8e6;padding:30px 0 18px;margin-top:20px;text-align:center;font-size:13px}
+footer b{color:#fff}
+@media(max-width:960px){
+ .hero-grid{grid-template-columns:1fr} .hero h1{font-size:34px}
+ .grid-products{grid-template-columns:repeat(2,1fr)} .grid-occ{grid-template-columns:repeat(2,1fr)}
+ .grid-why{grid-template-columns:repeat(2,1fr)} .grid-rev{grid-template-columns:1fr}
+ .contact-grid{grid-template-columns:1fr} .links{display:none}
+}
+</style>
+</head>
+<body>
+
+<header>
+<nav class="nav">
+  <div class="logo"><div class="logo-mark">🌸</div><div><span data-ar="لمسة ورد ومشتل" data-en="Bloom & Nursery">لمسة ورد ومشتل</span><small data-ar="ورد • نباتات • أشجار • هدايا" data-en="Flowers • Plants • Trees • Gifts">ورد • نباتات • أشجار • هدايا</small></div></div>
+  <div class="links">
+    <a href="#home" data-ar="الرئيسية" data-en="Home">الرئيسية</a>
+    <a href="#products" data-ar="المنتجات" data-en="Shop">المنتجات</a>
+    <a href="#occasions" data-ar="المناسبات" data-en="Occasions">المناسبات</a>
+    <a href="#reviews" data-ar="آراء العملاء" data-en="Reviews">آراء العملاء</a>
+    <a href="#contact" data-ar="تواصل معنا" data-en="Contact">تواصل معنا</a>
+  </div>
+  <div class="nav-actions">
+    <button class="btn btn-ghost lang-btn" id="langBtn" onclick="toggleLang()">EN 🌐</button>
+    <button class="cart-btn" onclick="openCart()">🛒<span class="cart-count" id="cartCount">0</span></button>
+  </div>
+</nav>
+</header>
+
+<div class="hero" id="home">
+  <div class="blob" style="width:300px;height:300px;background:#ffb3c9;top:-60px;right:-60px"></div>
+  <div class="blob" style="width:260px;height:260px;background:#c4b5fd;bottom:0;left:10%"></div>
+  <div class="container hero-grid">
+    <div>
+      <div class="badge">✨ <span data-ar="توصيل سريع لنفس اليوم" data-en="Same-day fast delivery">توصيل سريع لنفس اليوم</span> 🚚</div>
+      <h1><span data-ar="أجمل " data-en="Beautiful ">أجمل </span><span class="c1" data-ar="الورد" data-en="flowers">الورد</span><span data-ar=" وأحلى " data-en=" & lovely "> وأحلى </span><span class="c2" data-ar="النباتات" data-en="plants">النباتات</span><br><span data-ar="لكل " data-en="for every ">لكل </span><span class="c3" data-ar="مناسباتك" data-en="occasion">مناسباتك</span> 🎉</h1>
+      <p data-ar="محل ورد ومشتل أشجار ونباتات — باقات ورد طبيعي، نباتات داخلية، أشجار مثمرة وزينة، وبوكسات هدايا. اطلب بضغطة زر واستلم طلبك عبر واتساب." data-en="Flower shop & tree nursery — fresh bouquets, indoor plants, fruit & ornamental trees, and gift boxes. Order in one tap via WhatsApp.">محل ورد ومشتل أشجار ونباتات — باقات ورد طبيعي، نباتات داخلية، أشجار مثمرة وزينة، وبوكسات هدايا. اطلب بضغطة زر واستلم طلبك عبر واتساب.</p>
+      <div class="hero-cta">
+        <a class="btn btn-wa" id="heroWa" href="#" target="_blank">💬 <span data-ar="اطلب عبر واتساب" data-en="Order on WhatsApp">اطلب عبر واتساب</span></a>
+        <a class="btn btn-pink" href="#products">🌷 <span data-ar="تصفح المنتجات" data-en="Browse products">تصفح المنتجات</span></a>
+        <a class="btn btn-white" id="heroMap" href="https://maps.app.goo.gl/8WUhHzyoh3wkYkuBA" target="_blank">📍 <span data-ar="موقع المحل" data-en="Store location">موقع المحل</span></a>
+      </div>
+      <div class="hero-stats">
+        <div class="hstat"><b>⭐ 4.9</b><span data-ar="تقييم العملاء" data-en="Customer rating">تقييم العملاء</span></div>
+        <div class="hstat"><b>+5000 🌸</b><span data-ar="باقة تم توصيلها" data-en="Bouquets delivered">باقة تم توصيلها</span></div>
+        <div class="hstat"><b>🚚 <span data-ar="نفس اليوم" data-en="Same day">نفس اليوم</span></b><span data-ar="توصيل سريع" data-en="Fast delivery">توصيل سريع</span></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-card-main">
+        <div class="hero-flowers">🌹🌷🌻🌸🌺</div>
+        <div style="text-align:center;font-weight:900;font-size:18px;margin-top:8px" data-ar="باقات اليوم المميزة — ابتداءً من 150 جنيه" data-en="Today's featured bouquets — from EGP 150">باقات اليوم المميزة — ابتداءً من 150 جنيه</div>
+        <div style="display:flex;gap:8px;justify-content:center;margin-top:12px;flex-wrap:wrap">
+          <span style="background:#ffe4ec;color:#be185d;font-size:12px;font-weight:800;padding:6px 14px;border-radius:999px">🌹 ورد بلدي</span>
+          <span style="background:#fef3c7;color:#92400e;font-size:12px;font-weight:800;padding:6px 14px;border-radius:999px">🌻 عباد الشمس</span>
+          <span style="background:#ede9fe;color:#5b21b6;font-size:12px;font-weight:800;padding:6px 14px;border-radius:999px">🌸 أوركيد</span>
+          <span style="background:#dcfce7;color:#166534;font-size:12px;font-weight:800;padding:6px 14px;border-radius:999px">🪴 نباتات</span>
+        </div>
+      </div>
+      <div class="float-chip fc1">💰 <span data-ar="أسعار تبدأ من 50 ج" data-en="Prices from EGP 50">أسعار تبدأ من 50 ج</span></div>
+      <div class="float-chip fc2">🎁 <span data-ar="تغليف هدايا مجاني" data-en="Free gift wrapping">تغليف هدايا مجاني</span></div>
+    </div>
+  </div>
+  <div class="container"><div class="marquee" id="marquee"></div></div>
+</div>
+
+<section id="products" style="padding-top:30px">
+<div class="container">
+  <div class="sec-head"><span class="sec-tag" data-ar="🌷 تشكيلتنا" data-en="🌷 Our collection">🌷 تشكيلتنا</span>
+  <h2 data-ar="تسوق الورد والنباتات" data-en="Shop flowers & plants">تسوق الورد والنباتات</h2>
+  <p data-ar="اختر من الباقات والنباتات، أضف للسلة، ثم أرسل طلبك واتساب — سهلة وسريعة." data-en="Pick bouquets & plants, add to cart, then send your order via WhatsApp — easy & fast.">اختر من الباقات والنباتات، أضف للسلة، ثم أرسل طلبك واتساب — سهلة وسريعة.</p></div>
+  <div class="filters" id="filters"></div>
+  <div class="grid-products" id="productsGrid"></div>
+</div>
+</section>
+
+<section id="occasions" style="background:linear-gradient(180deg,#fff 0%,#fff1f5 50%,#fff 100%)">
+<div class="container">
+  <div class="sec-head"><span class="sec-tag" data-ar="🎉 للمناسبات" data-en="🎉 Occasions">🎉 للمناسبات</span>
+  <h2 data-ar="ورد لكل مناسبة" data-en="Flowers for every occasion">ورد لكل مناسبة</h2>
+  <p data-ar="زفاف، خطوبة، عيد ميلاد، تهنئة بالسلامة أو مولود جديد — جهزنا لك الباقة المناسبة." data-en="Weddings, engagements, birthdays, get-well or new baby — we have the perfect bouquet.">زفاف، خطوبة، عيد ميلاد، تهنئة بالسلامة أو مولود جديد — جهزنا لك الباقة المناسبة.</p></div>
+  <div class="grid-occ">
+    <div class="occ" style="background:linear-gradient(135deg,#ff5e8a,#ff9a3d)"><div class="emo">💍</div><b data-ar="زفاف وخطوبة" data-en="Wedding">زفاف وخطوبة</b><span data-ar="بوكيه عروس ومسكات" data-en="Bridal bouquets">بوكيه عروس ومسكات</span></div>
+    <div class="occ" style="background:linear-gradient(135deg,#8b5cf6,#ec4899)"><div class="emo">🎂</div><b data-ar="عيد ميلاد" data-en="Birthday">عيد ميلاد</b><span data-ar="باقات ملونة مبهجة" data-en="Cheerful colorful">باقات ملونة مبهجة</span></div>
+    <div class="occ" style="background:linear-gradient(135deg,#14b8a6,#22c55e)"><div class="emo">🏥</div><b data-ar="سلامتك" data-en="Get well">سلامتك</b><span data-ar="ورد يفرح المريض" data-en="Cheer up">ورد يفرح المريض</span></div>
+    <div class="occ" style="background:linear-gradient(135deg,#f59e0b,#ef4444)"><div class="emo">👶</div><b data-ar="مولود جديد" data-en="New baby">مولود جديد</b><span data-ar="وردي وأزرق ناعم" data-en="Soft pink & blue">وردي وأزرق ناعم</span></div>
+    <div class="occ" style="background:linear-gradient(135deg,#0ea5e9,#8b5cf6)"><div class="emo">🎓</div><b data-ar="تخرج ونجاح" data-en="Graduation">تخرج ونجاح</b><span data-ar="عباد شمس وهدايا" data-en="Sunflowers & gifts">عباد شمس وهدايا</span></div>
+  </div>
+</div>
+</section>
+
+<section style="padding-top:20px">
+<div class="container">
+  <div class="sec-head"><span class="sec-tag" data-ar="💎 ليه إحنا؟" data-en="💎 Why us?">💎 ليه إحنا؟</span>
+  <h2 data-ar="محل ومشتل في مكان واحد" data-en="Shop & nursery in one place">محل ومشتل في مكان واحد</h2></div>
+  <div class="grid-why">
+    <div class="why"><div class="ic" style="background:linear-gradient(135deg,#ff5e8a,#ff9a3d)">🌹</div><b data-ar="ورد طازج يومياً" data-en="Fresh daily">ورد طازج يومياً</b><p data-ar="يصلنا الورد كل صباح من المزرعة مباشرة." data-en="Fresh flowers every morning from the farm.">يصلنا الورد كل صباح من المزرعة مباشرة.</p></div>
+    <div class="why"><div class="ic" style="background:linear-gradient(135deg,#22c55e,#14b8a6)">🌳</div><b data-ar="مشتل أشجار ونباتات" data-en="Tree nursery">مشتل أشجار ونباتات</b><p data-ar="أشجار مثمرة وزينة ونباتات داخلية وخارجية." data-en="Fruit, ornamental trees & indoor/outdoor plants.">أشجار مثمرة وزينة ونباتات داخلية وخارجية.</p></div>
+    <div class="why"><div class="ic" style="background:linear-gradient(135deg,#8b5cf6,#ec4899)">🎁</div><b data-ar="تغليف هدايا" data-en="Gift wrapping">تغليف هدايا</b><p data-ar="بوكسات ورد مع شوكولاتة وكروت إهداء مجانية." data-en="Rose boxes with chocolate & free cards.">بوكسات ورد مع شوكولاتة وكروت إهداء مجانية.</p></div>
+    <div class="why"><div class="ic" style="background:linear-gradient(135deg,#f59e0b,#ef4444)">🚚</div><b data-ar="توصيل سريع" data-en="Fast delivery">توصيل سريع</b><p data-ar="توصيل نفس اليوم مع عناية خاصة بالورد." data-en="Same-day delivery with special flower care.">توصيل نفس اليوم مع عناية خاصة بالورد.</p></div>
+  </div>
+</div>
+</section>
+
+<section id="reviews" style="background:#faf5ff">
+<div class="container">
+  <div class="sec-head"><span class="sec-tag" data-ar="⭐ آراء عملائنا" data-en="⭐ Reviews">⭐ آراء عملائنا</span>
+  <h2 data-ar="ناس جربتنا وحبتنا — 5 نجوم على خرائط جوجل" data-en="Loved by customers — 5 stars on Google Maps">ناس جربتنا وحبتنا — 5 نجوم على خرائط جوجل</h2>
+  <p style="color:var(--muted);font-size:13px" data-ar="تقييمات حقيقية من صفحة المحل على Google Maps" data-en="Real reviews from our Google Maps page">تقييمات حقيقية من صفحة المحل على Google Maps</p></div>
+  <div class="grid-rev">
+    <div class="rev"><div class="stars">★★★★★</div><p data-ar="محل ورد جميل جداً، وأحمد راجل متعاون جداً بيعمل أي بوكيه على قد ميزانيتك بدون أي زيادة. شكراً جداً وبالتوفيق." data-en="A very nice flower shop, and Ahmed is a very helpful man who makes any bouquet to suit your budget without any extra charges. Thank you so much!">محل ورد جميل جداً، وأحمد راجل متعاون جداً بيعمل أي بوكيه على قد ميزانيتك بدون أي زيادة. شكراً جداً وبالتوفيق.</p><div class="who"><div class="avatar" style="background:linear-gradient(135deg,#ff5e8a,#ff9a3d)">E</div><div><b>emad Mahfoudh</b><br><small style="color:var(--muted)">📍 Local Guide · 125 reviews</small></div></div></div>
+    <div class="rev"><div class="stars">★★★★★</div><p data-ar="التنفيذ سريع جداً، كل أنواع الورد متوفرة، والخدمة ممتازة." data-en="The execution is very fast, all types of roses are available, and the service is excellent.">التنفيذ سريع جداً، كل أنواع الورد متوفرة، والخدمة ممتازة.</p><div class="who"><div class="avatar" style="background:linear-gradient(135deg,#22c55e,#14b8a6)">A</div><div><b>Aslam Aslam</b><br><small style="color:var(--muted)">⭐ Google Maps review</small></div></div></div>
+    <div class="rev"><div class="stars">★★★★★</div><p data-ar="كل اللي تحتاجه: بوكيهات عروسة، ورد تخرج، هدايا خطوبة، تجهيز حفلة خطوبة، وتزيين عربيات." data-en="Everything you need: bridal bouquets, graduation arrangements, engagement gifts, ceremony setup, and car decorations.">كل اللي تحتاجه: بوكيهات عروسة، ورد تخرج، هدايا خطوبة، تجهيز حفلة خطوبة، وتزيين عربيات.</p><div class="who"><div class="avatar" style="background:linear-gradient(135deg,#8b5cf6,#ec4899)">إ</div><div><b data-ar="اسلام مدحت" data-en="Islam Medhat">اسلام مدحت</b><br><small style="color:var(--muted)">💍👰🎓🚗</small></div></div></div>
+    <div class="rev"><div class="stars">★★★★★</div><p data-ar="المكان جميل والأسعار كويسة." data-en="The place is nice and the prices are good.">المكان جميل والأسعار كويسة.</p><div class="who"><div class="avatar" style="background:linear-gradient(135deg,#f59e0b,#ef4444)">ع</div><div><b>alaa hosny</b><br><small style="color:var(--muted)">📍 Local Guide · 8 reviews</small></div></div></div>
+    <div class="rev"><div class="stars">★★★★★</div><p data-ar="عندهم أجمل ورد طبيعي." data-en="They have the most beautiful natural flowers.">عندهم أجمل ورد طبيعي.</p><div class="who"><div class="avatar" style="background:linear-gradient(135deg,#0ea5e9,#8b5cf6)">S</div><div><b>Safaa Amr</b><br><small style="color:var(--muted)">✨ New review · 2 weeks ago</small></div></div></div>
+    <div class="rev"><div class="stars">★★★★★</div><p data-ar="من أجمل محلات الورد — أحلى محل ورد." data-en="One of the most beautiful flower shops — the best flower shop.">من أجمل محلات الورد — أحلى محل ورد.</p><div class="who"><div class="avatar" style="background:linear-gradient(135deg,#ec4899,#8b5cf6)">D</div><div><b>Dalia Fathy · hosny soad</b><br><small style="color:var(--muted)">❤️❤️ Google Maps</small></div></div></div>
+  </div>
+  <div style="text-align:center;margin-top:18px"><a class="btn btn-white" href="https://maps.app.goo.gl/8WUhHzyoh3wkYkuBA" target="_blank">⭐ <span data-ar="شوف كل التقييمات على خرائط جوجل" data-en="See all reviews on Google Maps">شوف كل التقييمات على خرائط جوجل</span></a></div>
+</div>
+</section>
+
+<section id="contact">
+<div class="container">
+  <div class="sec-head"><span class="sec-tag" data-ar="📍 زورونا" data-en="📍 Visit us">📍 زورونا</span>
+  <h2 data-ar="عن المحل وتواصل معنا" data-en="About & contact">عن المحل وتواصل معنا</h2>
+  <p data-ar="محل ورد ومشتل أشجار ونباتات — نستناكم تشرفونا أو اطلبوا أونلاين." data-en="Flower shop & nursery — visit us or order online.">محل ورد ومشتل أشجار ونباتات — نستناكم تشرفونا أو اطلبوا أونلاين.</p></div>
+  <div class="contact-grid">
+    <div class="info-card">
+      <h3 style="font-size:20px">🌸 <span data-ar="محل ورد ومشتل أشجار ونباتات" data-en="Flower Shop & Tree Nursery">محل ورد ومشتل أشجار ونباتات</span></h3>
+      <div class="info-row"><div class="info-ic">📍</div><div><b data-ar="العنوان" data-en="Address">العنوان</b><br><span data-ar="محور عدلى منصور، القاهرة 11311، مصر" data-en="Adly Mansour Axis, Cairo 11311, Egypt">محور عدلى منصور، القاهرة 11311، مصر</span></div></div>
+      <div class="info-row"><div class="info-ic">🕐</div><div><b data-ar="مواعيد العمل" data-en="Hours">مواعيد العمل</b><br><span data-ar="يومياً من 9 صباحاً حتى 11 مساءً" data-en="Daily 9 AM – 11 PM">يومياً من 9 صباحاً حتى 11 مساءً</span></div></div>
+      <div class="info-row"><div class="info-ic">📞</div><div><b data-ar="تليفون / واتساب" data-en="Phone / WhatsApp">تليفون / واتساب</b><br><span dir="ltr" id="phoneText"><a href="tel:+201010063482" style="color:#fff;font-weight:800">01010063482</a> 📞</span></div></div>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:14px">
+        <a class="btn btn-wa" id="contactWa" href="#" target="_blank">💬 واتساب</a>
+        <a class="btn btn-white" href="https://maps.app.goo.gl/8WUhHzyoh3wkYkuBA" target="_blank">📍 Google Maps</a>
+      </div>
+    </div>
+    <div class="map-card">
+      <iframe title="map" loading="lazy" src="https://maps.google.com/maps?q=30.1225543,31.3637671&z=16&hl=ar&output=embed"></iframe>
+      <div class="map-foot">
+        <div style="font-size:13px;font-weight:700">📍 <span data-ar="موقع المحل على الخريطة" data-en="Store location on map">موقع المحل على الخريطة</span><br><small style="color:var(--muted)" dir="ltr">30.1225543, 31.3637671</small></div>
+        <a class="btn btn-pink" href="https://maps.app.goo.gl/8WUhHzyoh3wkYkuBA" target="_blank" style="font-size:13px">🗺️ <span data-ar="افتح في خرائط جوجل" data-en="Open in Google Maps">افتح في خرائط جوجل</span></a>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<footer>
+<div class="container">
+<b>🌸 <span data-ar="لمسة ورد ومشتل" data-en="Bloom & Nursery">لمسة ورد ومشتل</span></b> — <span data-ar="صُنع بحب للورد والنباتات" data-en="Made with love for flowers">صُنع بحب للورد والنباتات</span> 💚<br>
+<small>© 2026 • <span data-ar="جميع الحقوق محفوظة" data-en="All rights reserved">جميع الحقوق محفوظة</span></small>
+</div>
+</footer>
+
+<a class="wa-float" id="floatWa" href="#" target="_blank" title="WhatsApp">💬</a>
+
+<div class="overlay" id="overlay" onclick="closeCart()"></div>
+<aside class="drawer" id="drawer">
+  <div class="drawer-head"><b>🛒 <span data-ar="سلة الطلب" data-en="Your cart">سلة الطلب</span> (<span id="drawerCount">0</span>)</b><button onclick="closeCart()" style="background:rgba(255,255,255,.2);border:none;color:#fff;width:34px;height:34px;border-radius:50%;cursor:pointer;font-size:16px">✕</button></div>
+  <div class="drawer-body"><div id="cartItems"></div></div>
+  <div class="drawer-foot">
+    <input id="custName" data-ar-ph="اسمك الكريم" data-en-ph="Your name" placeholder="اسمك الكريم">
+    <textarea id="custNote" rows="2" data-ar-ph="ملاحظات (عنوان التوصيل، كارت إهداء...)" data-en-ph="Notes (delivery address, gift card...)" placeholder="ملاحظات (عنوان التوصيل، كارت إهداء...)"></textarea>
+    <div class="total-row"><span data-ar="الإجمالي" data-en="Total">الإجمالي</span><span id="cartTotal">0 ج.م</span></div>
+    <button class="btn btn-wa" style="width:100%;justify-content:center" onclick="sendOrder()">💬 <span data-ar="إرسال الطلب واتساب" data-en="Send order via WhatsApp">إرسال الطلب واتساب</span></button>
+    <button class="btn btn-white" style="width:100%;justify-content:center;margin-top:8px" onclick="clearCart()"><span data-ar="تفريغ السلة" data-en="Clear cart">تفريغ السلة</span></button>
+  </div>
+</aside>
+<div class="toast" id="toast"></div>
+
+<script>
+// ====== ⚙️ الإعدادات — عدّل هنا فقط ======
+const WHATSAPP_NUMBER = "201010063482"; // رقم واتساب المحل — 01010063482
+const MAPS_URL = "https://maps.app.goo.gl/8WUhHzyoh3wkYkuBA";
+// ========================================
+
+let LANG = "ar";
+const CATS = [
+  {id:"all", ar:"الكل 🌸", en:"All 🌸"},
+  {id:"bouquet", ar:"باقات ورد 💐", en:"Bouquets 💐"},
+  {id:"plants", ar:"نباتات داخلية 🪴", en:"Indoor 🪴"},
+  {id:"nursery", ar:"أشجار ومشتل 🌳", en:"Nursery 🌳"},
+  {id:"gifts", ar:"هدايا 🎁", en:"Gifts 🎁"},
+];
+let activeCat = "all";
+const PRODUCTS = [
+  {id:1, cat:"bouquet", emoji:"🌹", bg:"linear-gradient(135deg,#ffe4ec,#ffc2d4)", ar:"باقة ورد أحمر كلاسيك (20 وردة)", en:"Classic red roses (20)", price:450, descAr:"ورد بلدي فاخر + تغليف شيك", descEn:"Premium roses + chic wrap"},
+  {id:2, cat:"bouquet", emoji:"🌷", bg:"linear-gradient(135deg,#ede9fe,#fbcfe8)", ar:"باقة باستيل راقية", en:"Pastel bouquet", price:350, descAr:"توليب وقرنفل بألوان هادية", descEn:"Tulips & carnations pastel"},
+  {id:3, cat:"bouquet", emoji:"🌻", bg:"linear-gradient(135deg,#fef3c7,#fde68a)", ar:"بوكيه عباد الشمس", en:"Sunflower bouquet", price:280, descAr:"مبهج ومناسب للهدايا", descEn:"Cheerful gift pick"},
+  {id:4, cat:"bouquet", emoji:"🌸", bg:"linear-gradient(135deg,#fce7f3,#e9d5ff)", ar:"أوركيد فاخر", en:"Luxury orchid", price:650, descAr:"أوركيد مستورد يعيش طويلاً", descEn:"Imported long-lasting orchid"},
+  {id:5, cat:"plants", emoji:"🪴", bg:"linear-gradient(135deg,#dcfce7,#bbf7d0)", ar:"مونستيرا داخلية", en:"Monstera plant", price:320, descAr:"نبتة ظل سهلة العناية", descEn:"Easy-care indoor plant"},
+  {id:6, cat:"plants", emoji:"🌵", bg:"linear-gradient(135deg,#ecfdf5,#a7f3d0)", ar:"تشكيلة صبار + عصاريات", en:"Cactus & succulents set", price:150, descAr:"3 قطع بأصيص ملون", descEn:"3 pcs in colorful pots"},
+  {id:7, cat:"nursery", emoji:"🌳", bg:"linear-gradient(135deg,#d9f99d,#bbf7d0)", ar:"شجرة ليمون مثمرة", en:"Lemon tree", price:250, descAr:"من المشتل — طرح مضمون", descEn:"From nursery — fruitful"},
+  {id:8, cat:"nursery", emoji:"🫒", bg:"linear-gradient(135deg,#fef9c3,#d9f99d)", ar:"شجرة زيتون زينة", en:"Olive tree", price:400, descAr:"شكل مميز للفيلا والبلكونة", descEn:"Great for villa & balcony"},
+  {id:9, cat:"gifts", emoji:"🎁", bg:"linear-gradient(135deg,#ffe4e6,#fecdd3)", ar:"بوكس ورد + شوكولاتة", en:"Rose box + chocolate", price:550, descAr:"بوكس قلب + كارت إهداء", descEn:"Heart box + greeting card"},
+  {id:10, cat:"gifts", emoji:"🧸", bg:"linear-gradient(135deg,#ffedd5,#fed7aa)", ar:"باقة ورد + دبدوب", en:"Roses + teddy", price:500, descAr:"هدية عيد ميلاد متكاملة", descEn:"Complete birthday gift"},
+  {id:11, cat:"plants", emoji:"🌿", bg:"linear-gradient(135deg,#ccfbf1,#99f6e0)", ar:"بوتس + أصيص سيراميك", en:"Pothos + ceramic pot", price:180, descAr:"أنسب نبتة للمبتدئين", descEn:"Best for beginners"},
+  {id:12, cat:"bouquet", emoji:"💐", bg:"linear-gradient(135deg,#fae8ff,#fce7f3)", ar:"بوكيه مشكل كبير", en:"Big mixed bouquet", price:600, descAr:"تشكيلة الموسم الفاخرة", descEn:"Luxury season mix"},
+];
+let cart = {};
+function t(ar,en){ return LANG==="ar"?ar:en; }
+function money(n){ return LANG==="ar" ? n+" ج.م" : "EGP "+n; }
+
+function renderFilters(){
+  document.getElementById("filters").innerHTML = CATS.map(c=>
+    `<button class="fbtn ${activeCat===c.id?'active':''}" onclick="setCat('${c.id}')">${t(c.ar,c.en)}</button>`).join("");
+}
+function setCat(id){ activeCat=id; renderFilters(); renderProducts(); }
+function renderProducts(){
+  const list = PRODUCTS.filter(p=>activeCat==="all"||p.cat===activeCat);
+  document.getElementById("productsGrid").innerHTML = list.map(p=>`
+   <div class="card">
+     <div class="card-img" style="background:${p.bg}"><span style="font-size:72px">${p.emoji}</span>
+       <span class="price-tag">${money(p.price)}</span>
+       <span class="cat-tag">${t(CATS.find(c=>c.id===p.cat).ar, CATS.find(c=>c.id===p.cat).en)}</span>
+     </div>
+     <div class="card-body"><h3>${t(p.ar,p.en)}</h3><div class="desc">${t(p.descAr,p.descEn)}</div>
+       <div class="card-foot"><button class="add-btn" onclick="addToCart(${p.id})">🛒 ${t("أضف للسلة","Add")}</button>
+       <button class="order-btn" onclick="quickOrder(${p.id})">💬</button></div>
+     </div>
+   </div>`).join("");
+}
+function renderMarquee(){
+  const items = LANG==="ar" ? ["🌹 ورد طازج يومياً","🚚 توصيل نفس اليوم","🎁 تغليف مجاني","🌳 مشتل أشجار ونباتات","⭐ تقييم 4.9","💬 اطلب واتساب"] : ["🌹 Fresh daily","🚚 Same-day delivery","🎁 Free wrapping","🌳 Tree nursery","⭐ 4.9 rating","💬 WhatsApp order"];
+  document.getElementById("marquee").innerHTML = items.map(s=>`<span>${s}</span>`).join("");
+}
+function addToCart(id){
+  cart[id]=(cart[id]||0)+1; updateCart();
+  const p=PRODUCTS.find(x=>x.id===id);
+  toast(t("اتضافت للسلة: ","Added: ")+t(p.ar,p.en)+" ✅");
+}
+function quickOrder(id){
+  const p=PRODUCTS.find(x=>x.id===id);
+  const msg = t(`أهلاً 🌸 عايز أطلب: ${p.ar} — ${p.price} جنيه` , `Hi 🌸 I want: ${p.en} — EGP ${p.price}`);
+  window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(msg)}`,"_blank");
+}
+function updateCart(){
+  const count=Object.values(cart).reduce((a,b)=>a+b,0);
+  document.getElementById("cartCount").textContent=count;
+  document.getElementById("drawerCount").textContent=count;
+  let total=0, html="";
+  for(const [id,q] of Object.entries(cart)){
+    const p=PRODUCTS.find(x=>x.id==id); if(!p) continue;
+    total+=p.price*q;
+    html+=`<div class="cart-item"><div class="e" style="background:${p.bg}">${p.emoji}</div>
+     <div style="flex:1"><b style="font-size:13px">${t(p.ar,p.en)}</b><br><small style="color:var(--muted)">${money(p.price)}</small>
+     <div class="qty"><button onclick="chQty(${id},-1)">−</button><b>${q}</b><button onclick="chQty(${id},1)">+</button></div></div>
+     <button onclick="delItem(${id})" style="border:none;background:none;cursor:pointer;font-size:16px">🗑️</button></div>`;
+  }
+  if(!html) html=`<div style="text-align:center;padding:30px 10px;color:var(--muted)"><div style="font-size:50px">🛒</div><b>${t("سلتك فاضية","Cart is empty")}</b><br><small>${t("اختار ورد جميل وابدأ الطلب","Pick lovely flowers")}</small></div>`;
+  document.getElementById("cartItems").innerHTML=html;
+  document.getElementById("cartTotal").textContent=money(total);
+}
+function chQty(id,d){ cart[id]=(cart[id]||0)+d; if(cart[id]<=0) delete cart[id]; updateCart(); }
+function delItem(id){ delete cart[id]; updateCart(); }
+function clearCart(){ cart={}; updateCart(); }
+function openCart(){ document.getElementById("drawer").classList.add("open"); document.getElementById("overlay").classList.add("show"); }
+function closeCart(){ document.getElementById("drawer").classList.remove("open"); document.getElementById("overlay").classList.remove("show"); }
+function sendOrder(){
+  const ids=Object.keys(cart);
+  if(!ids.length){ toast(t("سلتك فاضية — ضيف منتج الأول 🛒","Cart empty — add something 🛒")); return; }
+  let total=0; const lines=ids.map(id=>{ const p=PRODUCTS.find(x=>x.id==id); const q=cart[id]; total+=p.price*q; return `• ${t(p.ar,p.en)} × ${q} = ${p.price*q} ج`; });
+  const name=document.getElementById("custName").value||t("عميل","Customer");
+  const note=document.getElementById("custNote").value||"—";
+  const msg=`🌸 طلب جديد من الموقع%0A👤 الاسم: ${encodeURIComponent(name)}%0A${encodeURIComponent(lines.join("\n"))}%0A💰 الإجمالي: ${total} جنيه%0A📝 ملاحظات: ${encodeURIComponent(note)}`;
+  window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${msg}`,"_blank");
+}
+function toast(msg){ const el=document.getElementById("toast"); el.textContent=msg; el.classList.add("show"); setTimeout(()=>el.classList.remove("show"),2200); }
+function toggleLang(){
+  LANG = LANG==="ar"?"en":"ar";
+  document.documentElement.lang=LANG; document.documentElement.dir=LANG==="ar"?"rtl":"ltr";
+  document.getElementById("langBtn").textContent = LANG==="ar" ? "EN 🌐" : "عربي 🌐";
+  document.querySelectorAll("[data-ar]").forEach(el=>{ el.textContent = LANG==="ar"?el.getAttribute("data-ar"):el.getAttribute("data-en"); });
+  document.querySelectorAll("[data-ar-ph]").forEach(el=>{ el.placeholder = LANG==="ar"?el.getAttribute("data-ar-ph"):el.getAttribute("data-en-ph"); });
+  renderFilters(); renderProducts(); renderMarquee(); updateCart(); setWaLinks();
+}
+function setWaLinks(){
+  const hello = encodeURIComponent(LANG==="ar"?"أهلاً 🌸 عايز أستفسر عن الورد المتاح":"Hi 🌸 I want to ask about available flowers");
+  const url=`https://wa.me/${WHATSAPP_NUMBER}?text=${hello}`;
+  document.getElementById("heroWa").href=url; document.getElementById("contactWa").href=url; document.getElementById("floatWa").href=url;
+}
+renderFilters(); renderProducts(); renderMarquee(); updateCart(); setWaLinks();
+if(WHATSAPP_NUMBER.includes("X")){ document.getElementById("phoneText").textContent = "01XXXXXXXXX — ⚠️ عدّل رقم الواتساب من WHATSAPP_NUMBER في الكود"; }
+</script>
+</body>
+</html>
